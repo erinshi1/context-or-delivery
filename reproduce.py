@@ -69,7 +69,10 @@ def validate(manifest, predictions):
         part = part.merge(manifest[["sample_id", "speaker"]], on="sample_id")
         if part.groupby("speaker")["partition"].nunique().max() != 1:
             raise ValueError("Speaker crosses repeated partition")
-    for path in sorted((ROOT / "features").glob("*.npz")):
+    feature_files = sorted((ROOT / "features").glob("*.npz"))
+    if len(feature_files) != 16:
+        raise ValueError("Expected all 16 frozen BERT feature matrices")
+    for path in feature_files:
         z = np.load(path, allow_pickle=False)
         if list(z["sample_id"].astype(str)) != list(manifest.sample_id):
             raise ValueError(f"Feature IDs differ in {path.name}")

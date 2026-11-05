@@ -36,7 +36,7 @@ Use `--bootstrap 200` for a quick software check; the paper uses 5,000 resamples
 
 ## Full audiovisual training
 
-The saved audiovisual predictions and results are included, but the original Wav2Vec2 and TimeSformer sequence tensors are not in this release. They were stored on the external experiment drive, which was unavailable during packaging. This repository supports independent statistical reanalysis and text-head refitting; it does not currently provide all inputs needed to refit the audiovisual systems or reconstruct upstream audiovisual extraction.
+The saved audiovisual predictions and results are included, but the original Wav2Vec2 and TimeSformer sequence tensors are not in this release. This repository supports independent statistical reanalysis and text-head refitting; it does not currently provide all inputs needed to refit the audiovisual systems or reconstruct upstream audiovisual extraction.
 
 The original scripts accept the organized experiment layout:
 
@@ -65,7 +65,7 @@ python work/run_context_mlp_robustness.py \
   --output-dir reproduced/full_mlp --seeds 42 123 2027
 ```
 
-The original data source is [MUStARD](https://github.com/soujanyaporia/MUStARD). [MUStARD++](https://github.com/cfiltnlp/MUStARD_Plus_Plus) is a separate later extension, not the 1,202-instance dataset evaluated here. The 690 original targets become 684 after excluding six missing video tensors; the exclusions are listed in `results/lr/excluded_samples.csv`.
+The original data source is [MUStARD](https://github.com/soujanyaporia/MUStARD). [MUStARD++](https://github.com/cfiltnlp/MUStARD_Plus_Plus) is a separate later 1,202-instance extension and was not evaluated in this study. The 690 original targets become 684 after excluding six missing video tensors; the exclusions are listed in `results/lr/excluded_samples.csv`.
 
 ## Interpretation and reporting corrections
 
