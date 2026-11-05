@@ -1,0 +1,7 @@
+sample_id,reason
+2_113,missing_video_tensor
+2_167,missing_audio_tensor;missing_video_tensor
+2_323,missing_video_tensor
+2_430,missing_video_tensor
+2_464,missing_video_tensor
+2_99,missing_audio_tensor;missing_video_tensor
