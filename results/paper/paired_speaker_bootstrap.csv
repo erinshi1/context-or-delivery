@@ -1,0 +1,11 @@
+comparison,condition_a,condition_b,delta,ci_low,ci_high,resamples,bootstrap_seed
+All context - target,context_all_target_text,target_text,0.04968313153544701,0.0033487740059672784,0.08437300412867746,5000,2127
+C3 - target,context_3_target_text,target_text,0.04794895412187827,-0.02402378679787244,0.09181184230144189,5000,2128
+Target T+A+V - target,target_text_av,target_text,0.03033593609084473,-0.007560448826579454,0.05935852702794717,5000,2129
+A+V after C1,context_1_target_text_av,context_1_target_text,-0.003517040402933991,-0.05484438625728079,0.04470167260456134,5000,2132
+A+V after C2,context_2_target_text_av,context_2_target_text,-0.006241421242793033,-0.05037127400167646,0.04395277236434195,5000,2133
+A+V after C3,context_3_target_text_av,context_3_target_text,-0.011810124674899836,-0.048722340989443766,0.05094706571073694,5000,2138
+A+V after all context,context_all_target_text_av,context_all_target_text,-0.023413882738038017,-0.06147550457900096,0.010489972209129946,5000,2141
+Target-first C3 - random,target_context_3_text,target_random_context_3_text,0.07248946589383598,-0.0007360950797467839,0.12207234207642147,5000,2146
+Target-first C3 - same speaker,target_context_3_text,target_same_speaker_context_3_text,0.029462088012836563,-0.022572035651654797,0.08139080185410988,5000,2147
+Target-first C3 - same show,target_context_3_text,target_same_show_context_3_text,0.06622112656558432,-0.01900617361270226,0.1107568477284585,5000,2148
